@@ -3,6 +3,7 @@ import { View, StyleSheet, Text, TouchableOpacity } from 'react-native';
 import styles from './styles';
 import { inject, observer } from 'mobx-react';
 import { TestStore } from '../../stores';
+import I18n from '../../language';
 
 export interface IHomeProps {
   navigation: any;
@@ -47,7 +48,7 @@ export default class HomeScreen extends React.Component<IHomeProps, IHomeState> 
       <View style={styles.container}>
         <Text>Counter: {this.props.testStore.counter}</Text>
         <TouchableOpacity onPress={this.goBack}>
-          <Text>Back to login</Text>
+          <Text>{I18n.t('backToLogin')}</Text>
         </TouchableOpacity>
       </View>
     );

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { View, StyleSheet, Text, TouchableOpacity } from 'react-native';
 import styles from './styles';
+import I18n from '../../language';
 export interface ILoginProps {
   navigation: any;
 }
@@ -23,7 +24,7 @@ export default class LoginScreen extends React.Component<ILoginProps, ILoginStat
     return (
       <View style={styles.container}>
          <TouchableOpacity  onPress={this.goHome}>
-          <Text>Go to Home</Text>
+          <Text>{I18n.t('goHome')}</Text>
          </TouchableOpacity>
       </View>
     );
