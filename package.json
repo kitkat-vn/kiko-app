@@ -29,6 +29,7 @@
     "build:android": "react-native bundle --entry-file index.js --platform android --dev false --bundle-output android/main.jsbundle --assets-dest ./android"
   },
   "dependencies": {
+    "jsc-android": "^236355.1.1",
     "lodash": "^4.17.11",
     "mobx": "^5.8.0",
     "mobx-react": "^5.4.3",
@@ -36,8 +37,8 @@
     "react-native": "0.57.8",
     "react-native-gesture-handler": "^1.0.12",
     "react-native-i18n": "^2.0.15",
-    "react-navigation": "^3.0.9",
-    "jsc-android": "^236355.1.1"
+    "react-native-splash-screen": "^3.1.1",
+    "react-navigation": "^3.0.9"
   },
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.2.3",

@@ -3,11 +3,15 @@ import { Platform, StyleSheet, Text, View } from 'react-native';
 import { Provider } from 'mobx-react';
 import { createStores } from './stores';
 import SwitchNavigator from './navigators//SwitchNavigator';
+import SplashScreen from 'react-native-splash-screen';
 
 const rootStore = createStores();
 
 export default class App extends React.Component<any, any>{
 
+  componentDidMount() {
+    SplashScreen.hide();
+  }
   public render() {
     return (
       <Provider {...rootStore}>
