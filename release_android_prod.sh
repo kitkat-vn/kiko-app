@@ -1,0 +1,1 @@
+code-push release-react MobxBaseStarter-ANDROID android --dev false -k private.pem --deploymentName Production

@@ -1,0 +1,1 @@
+code-push release-react MobxBaseStarter-IOS ios --dev true -k private.pem

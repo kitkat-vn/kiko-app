@@ -40,15 +40,27 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
 	<key>NSAppTransportSecurity</key>
-	<!--See http://ste.vn/2015/06/10/configuring-app-transport-security-ios-9-osx-10-11/ -->
 	<dict>
-    <key>NSAllowsArbitraryLoads</key>
-    <true/>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
 		<key>NSExceptionDomains</key>
 		<dict>
+			<key>codepush.azurewebsites.net</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+			<key>codepush.blob.core.windows.net</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+			<key>codepushupdates.azureedge.net</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
 			<key>localhost</key>
 			<dict>
 				<key>NSExceptionAllowsInsecureHTTPLoads</key>
@@ -56,5 +68,17 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>CodePushDeploymentKey</key>
+	<string>wkDYamwhm_11Bjqih6ic8Jr5VJib8b0c3e28-28ea-4090-96b5-dbc3fdb4640b</string>
+	<key>CodePushPublicKey</key>
+	<string>-----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqiaJNaqsjY0y2aQvvk7r
+fukWeWnWZZJ/dIAmZwXTnAJA2RRX0DeApqVlXQv9Cfuk5IyxRs+F3fIFdqimKvWD
+TJ6DnDIb051Ane6FANlYP+/DnW5xVU7oQG7ml9KOx7GyFsmQoEXc7daT2NEwl5O9
+n4Tmg2OMkh7hSwZQaD/UJRIVXp4mCGBapJvCxN4kJIi/xPoZ1WiVMdYvtigNnJo+
+a/S3m3rSUag4RhRYS4ZQKNPNoXaHT7dgM7QSFNAcQ8tKGQ9Q7AB20FOaqef63eqG
+HHNhnuDXEyXMkx5djgg9Rb80L7KFmorcK+AlzFRk8nvAdwhLguOHYI2UaY+E7WfA
+NQIDAQAB
+-----END PUBLIC KEY-----</string>
 </dict>
 </plist>
