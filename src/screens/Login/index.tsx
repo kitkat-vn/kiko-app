@@ -18,7 +18,7 @@ export default class LoginScreen extends React.Component<ILoginProps, ILoginStat
   }
 
   goHome =() => {
-    this.props.navigation.push("Home");
+    this.props.navigation.push("Main");
   }
 
   public render() {
