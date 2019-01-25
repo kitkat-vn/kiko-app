@@ -49,6 +49,9 @@ interface IProps {
 }
 
 class MainTabNavigator extends React.Component<IProps> {
+  static navigationOptions = ({ navigation }) => ({
+    header: null
+  })
   private static router = TabNavigator.router;
 
   public render() {

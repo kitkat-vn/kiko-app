@@ -3,6 +3,7 @@ import { createStackNavigator } from 'react-navigation';
 
 import HomeScreen from '../screens/Home';
 import UnitsScreen from '../screens/Units';
+import { Image } from 'react-native';
 
 const routeConfig = {
   Home: {
@@ -17,16 +18,8 @@ const navigatorConfig = {
   initialRouteName: 'Home',
   gesturesEnabled: true,
   statusBarStyle: 'light-content',
-  navigationOptions: {
-    headerStyle: {
-      headerBackTitle: null,
-      backgroundColor: 'rgb(58,139,255)',
-      borderBottomColor: 'transparent',
-      borderBottomWidth: 0,
-      elevation: 0,
-    },
-    headerTitleStyle: { color: 'white' },
-    headerTintColor: 'white',
+  defaultNavigationOptions: {
+    header: <Image source={require('../../assets/images/blueHeader.png')} style={{ position: 'absolute',top: 0, left: 0, height: 60, width: '100%', resizeMode: 'stretch'}}/>
   },
 };
 
