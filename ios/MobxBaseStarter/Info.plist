@@ -20,26 +20,33 @@
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.805512576720-9r1ci5ensskkl49m2tu2nolma2demtnk</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>CodePushDeploymentKey</key>
+	<string>wkDYamwhm_11Bjqih6ic8Jr5VJib8b0c3e28-28ea-4090-96b5-dbc3fdb4640b</string>
+	<key>CodePushPublicKey</key>
+	<string>-----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqiaJNaqsjY0y2aQvvk7r
+fukWeWnWZZJ/dIAmZwXTnAJA2RRX0DeApqVlXQv9Cfuk5IyxRs+F3fIFdqimKvWD
+TJ6DnDIb051Ane6FANlYP+/DnW5xVU7oQG7ml9KOx7GyFsmQoEXc7daT2NEwl5O9
+n4Tmg2OMkh7hSwZQaD/UJRIVXp4mCGBapJvCxN4kJIi/xPoZ1WiVMdYvtigNnJo+
+a/S3m3rSUag4RhRYS4ZQKNPNoXaHT7dgM7QSFNAcQ8tKGQ9Q7AB20FOaqef63eqG
+HHNhnuDXEyXMkx5djgg9Rb80L7KFmorcK+AlzFRk8nvAdwhLguOHYI2UaY+E7WfA
+NQIDAQAB
+-----END PUBLIC KEY-----</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
-	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
-	<key>UIRequiredDeviceCapabilities</key>
-	<array>
-		<string>armv7</string>
-	</array>
-	<key>UISupportedInterfaceOrientations</key>
-	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>UIViewControllerBasedStatusBarAppearance</key>
-	<false/>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
@@ -68,17 +75,21 @@
 			</dict>
 		</dict>
 	</dict>
-	<key>CodePushDeploymentKey</key>
-	<string>wkDYamwhm_11Bjqih6ic8Jr5VJib8b0c3e28-28ea-4090-96b5-dbc3fdb4640b</string>
-	<key>CodePushPublicKey</key>
-	<string>-----BEGIN PUBLIC KEY-----
-MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqiaJNaqsjY0y2aQvvk7r
-fukWeWnWZZJ/dIAmZwXTnAJA2RRX0DeApqVlXQv9Cfuk5IyxRs+F3fIFdqimKvWD
-TJ6DnDIb051Ane6FANlYP+/DnW5xVU7oQG7ml9KOx7GyFsmQoEXc7daT2NEwl5O9
-n4Tmg2OMkh7hSwZQaD/UJRIVXp4mCGBapJvCxN4kJIi/xPoZ1WiVMdYvtigNnJo+
-a/S3m3rSUag4RhRYS4ZQKNPNoXaHT7dgM7QSFNAcQ8tKGQ9Q7AB20FOaqef63eqG
-HHNhnuDXEyXMkx5djgg9Rb80L7KFmorcK+AlzFRk8nvAdwhLguOHYI2UaY+E7WfA
-NQIDAQAB
------END PUBLIC KEY-----</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string></string>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
 </dict>
 </plist>
