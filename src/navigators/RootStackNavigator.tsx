@@ -2,22 +2,38 @@ import React from 'react';
 import { createStackNavigator } from 'react-navigation';
 
 import LoginScreen from '../screens/Login';
-import HomeScreen from '../screens/Home';
+import MainTabbar from '../navigators/MainTabNavigator';
+import ExercisesScreen from '../screens/Exercises';
+import PronunciationScreen from '../screens/Pronunciation';
+import DictationScreen from '../screens/Dictation';
+import ListenAnswerScreen from '../screens/ListenAnswer';
+import ListenFillScreen from '../screens/ListenFill';
+import ListenWordScreen from '../screens/ListenWord';
 
 const routeConfig = {
   Login: {
     screen: LoginScreen,
-    navigationOptions: {
-      title: 'Login',
-    },
-    path: 'login',
   },
-  Home: {
-    screen: HomeScreen,
-    path: 'home',
-    navigationOptions: {
-      title: 'Home',
-    },
+  Main: {
+    screen: MainTabbar,
+  },
+  Exercises: {
+    screen: ExercisesScreen,
+  },
+  Pronunciation: {
+    screen: PronunciationScreen,
+  },
+  Dictation: {
+    screen: DictationScreen,
+  },
+  ListenAnswer: {
+    screen: ListenAnswerScreen,
+  },
+  ListenFill: {
+    screen: ListenFillScreen,
+  },
+  ListenWord: {
+    screen: ListenWordScreen,
   }
 };
 
