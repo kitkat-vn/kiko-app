@@ -27,3 +27,23 @@ ios: info.plist
 Update code-push-deployments.json with all deployments key you have and custom it as you want.
 
 Update code using code-push-deployments.json.
+
+
+# Setup for google signin
+
+- Follow [this](https://github.com/react-native-community/react-native-google-signin/blob/master/docs/get-config-file.md) guide to get the configuration file.
+
+- Download the `GoogleService-Info.plist` file at the end of the process
+
+# Setup FBSDK ios 
+- Download sdk and place at ~/Documents/FacebookSDK
+  
+- run `sudo chmod -R 755 ~/Documents/FacebookSDK`
+
+- Set Framework search path  to $(HOME)/Documents/FacebookSDK 
+
+- Set Framework search path of RCFBSDK.xcodeproj  to $(HOME)/Documents/FacebookSDK 
+
+- If still missing framework try `clean build` and `rm -rf ~/Library/Developer/Xcode/DerivedData`
+
+
