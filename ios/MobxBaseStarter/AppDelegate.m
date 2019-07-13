@@ -6,13 +6,10 @@
  */
 
 #import "AppDelegate.h"
-#import <CodePush/CodePush.h>
 
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import "RNSplashScreen.h"
-#import "RNGoogleSignin.h"
 
 @implementation AppDelegate
 
@@ -25,9 +22,6 @@
   #else
     jsCodeLocation = [CodePush bundleURL];
   #endif
-
-  [[FBSDKApplicationDelegate sharedInstance] application:application
-                           didFinishLaunchingWithOptions:launchOptions];
   
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                       moduleName:@"MobxBaseStarter"
@@ -43,21 +37,5 @@
   [RNSplashScreen show];
   return YES;
 }
-
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
-  sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-  
-  return [RNGoogleSignin application:application
-                             openURL:url
-                   sourceApplication:sourceApplication
-                          annotation:annotation
-          ];
-}
-
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
-  {
-    return [[FBSDKApplicationDelegate sharedInstance] application:application openURL:url sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey] annotation:options[UIApplicationOpenURLOptionsAnnotationKey]]
-    || [RNGoogleSignin application:application openURL:url sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey] annotation:options[UIApplicationOpenURLOptionsAnnotationKey]];
-  }
 
 @end
